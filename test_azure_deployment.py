@@ -3,8 +3,8 @@ import json
 from azure.eventhub.aio import EventHubProducerClient
 from azure.eventhub import EventData, TransportType
 
-# DİKKAT: Connection String'inizi (Endpoint=sb://... ile başlayan) buraya yapıştırın
-CONNECTION_STR = "Endpoint=sb://medical-supply-chain-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=HFDW05QKieWgy3uDKmNHc2OisPdrfNvoy+AEhKCJZlw=;TransportType=AmqpWebSockets"
+# DİKKAT: Takım 1'den aldığınız anahtarı buraya yapıştırın
+CONNECTION_STR = ""
 EVENT_HUB_NAME = "inventory-low-events"
 
 async def run():

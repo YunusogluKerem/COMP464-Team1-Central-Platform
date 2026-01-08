@@ -10,8 +10,8 @@ Bu doküman, Hastane Ekiplerinin (Clients) Merkezi Depo sistemine nasıl bağlan
 
 Sistemi Docker üzerinde ayağa kaldırdıktan sonra aşağıdaki bilgilerle erişebilirsiniz.
 
-* **WSDL Adresi:** `http://localhost:8000/CentralServices?wsdl` (Tarayıcıda bu adresi açıp XML görüp görmediğinizi kontrol edin).
-* **Servis Endpoint:** `http://localhost:8000/CentralServices`
+* **WSDL Adresi:** `http://team1-central-platform-eqajhdbjbggkfxhf.westeurope-01.azurewebsites.net/CentralServices?wsdl` (Tarayıcıda bu adresi açıp XML görüp görmediğinizi kontrol edin).
+* **Servis Endpoint:** `http://team1-central-platform-eqajhdbjbggkfxhf.westeurope-01.azurewebsites.net/CentralServices`
 * **Protokol:** SOAP 1.1
 
 ### Kullanılabilir Metotlar
@@ -108,4 +108,5 @@ async def send_critical_event():
         print("Kritik olay Azure bulutuna başarıyla gönderildi!")
 
 if __name__ == '__main__':
+
     asyncio.run(send_critical_event())
